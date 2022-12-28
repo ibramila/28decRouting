@@ -20,10 +20,10 @@ function NavbarSide() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link><Link to="/">Home</Link></Nav.Link>
-            <Nav.Link><Link to="/contact">Contact</Link></Nav.Link>
-            <Nav.Link><Link to="/about">About</Link></Nav.Link>
-            <Nav.Link><Link to="/info">Information</Link></Nav.Link>
+            <Nav.Link><Link style={{ textDecoration: 'none' }} to="/home">Home</Link></Nav.Link>
+            <Nav.Link><Link style={{ textDecoration: 'none' }} to="/contact">Contact</Link></Nav.Link>
+            <Nav.Link><Link style={{ textDecoration: 'none' }} to="/about">About</Link></Nav.Link>
+            <Nav.Link><Link style={{ textDecoration: 'none' }} to="/info">Information</Link></Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

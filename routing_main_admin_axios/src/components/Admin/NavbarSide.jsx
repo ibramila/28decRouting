@@ -12,7 +12,7 @@ function NavbarSide() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand ><Link to="/">Site</Link></Navbar.Brand>
+        <Navbar.Brand ><Link style={{ textDecoration: 'none' }} to="/">Site</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -20,9 +20,9 @@ function NavbarSide() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link> <Link to="/admin">Dashboard</Link></Nav.Link>
-            <Nav.Link><Link to="/admin/products">Products</Link></Nav.Link>
-            <Nav.Link><Link to="/admin/suppliers">Suppliers</Link></Nav.Link>
+            <Nav.Link> <Link style={{ textDecoration: 'none' }} to="/admin">Dashboard</Link></Nav.Link>
+            <Nav.Link><Link style={{ textDecoration: 'none' }} to="/admin/products">Products</Link></Nav.Link>
+            <Nav.Link><Link style={{ textDecoration: 'none' }} to="/admin/suppliers">Suppliers</Link></Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
