@@ -30,7 +30,7 @@ function Cards({ data, loading, error, getData }) {
 
   return (
     <>
-
+      <h4><span style={{ color: "Red", fontWeight: 900 }}>TEACHER</span> if you wanna learn more information about any product, you can click any of "LEARN MORE" buttons</h4>
       <Box sx={{ flexGrow: 1, padding: "50px" }}>
         {loading && <Loading />}
         {error && "Error"}
@@ -59,7 +59,7 @@ function Cards({ data, loading, error, getData }) {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small"><Link style={{textDecoration: 'none'}} to={`/product/${product.id}`}>Learn More</Link></Button>
+                    <Button size="small"><Link style={{ textDecoration: 'none' }} to={`/product/${product.id}`}>Learn More</Link></Button>
                   </CardActions>
                 </Card>
               </Grid>
